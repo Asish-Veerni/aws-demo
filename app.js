@@ -16,10 +16,4 @@ app.get('/', async function (req, res) {
   res.json({ message: 'Success!', data: json });
 });
 
-app.post('/data', async function (req, res) {
-  const data = req.body;
-
-  res.status(201).json({ message: 'Received user message.', data });
-});
-
 app.listen(3000);
